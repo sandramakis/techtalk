@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* NAV SECTION  */
+
+nav{
+    background-image: url(img/mockup.png);
+    background-size: cover;
+    /* color: white; */
+    padding: .6rem;
+}
+
+nav div.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav h2{
+    color: white;
+    opacity: .8;
+    padding-left: .7rem;
+}
+
+nav img{
+    width: 4rem;
+}
+
+nav li{
+    list-style-type: none;
+    padding: 1rem .5rem;
+}
+
+
+nav li a{
+    text-decoration: none;
+    color: white;
+    opacity: 1;
+}
+
+.confirm-seat{
+    background-color: orange;
+    width: 50%;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+    nav{
+        display: flex;
+        justify-content: space-between; 
+        align-items: flex-start;
+        background-size: cover;
+        height: 90vh;
+        width: 100%;
+    }
+
+    nav ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav li{
+        padding: .4rem 1rem;
+    }
+
+    nav li a{
+        color: white;
+        opacity: 1;
+    }
+
+    li.confirm-seat{
+        width: 70%;
+    }
+}
