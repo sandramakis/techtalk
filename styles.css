@@ -10,11 +10,15 @@ body{
 
 /* NAV SECTION  */
 
-nav{
+header{
     background-image: url(img/mockup.png);
     background-size: cover;
-    /* color: white; */
-    padding: .6rem;
+    width: 100%;
+}
+
+nav{
+    background-color: #111;
+    width: 100%;
 }
 
 nav div.logo{
@@ -31,11 +35,13 @@ nav h2{
 
 nav img{
     width: 4rem;
+    border-radius: 50%;
 }
 
 nav li{
     list-style-type: none;
     padding: 1rem .5rem;
+    transition: all 2s;
 }
 
 
@@ -47,9 +53,26 @@ nav li a{
 
 .confirm-seat{
     background-color: orange;
+    color: #111;
     width: 50%;
 }
 
+header{
+    width: 100vw;
+    height: 100vh;
+}
+
+header div.heading{
+    padding: 3rem 0 0 1rem;
+}
+
+header h1{
+    font-size: 3rem;
+}
+
+header .softamplify{
+    color: orange;
+}
 
 
 
@@ -57,10 +80,10 @@ nav li a{
     nav{
         display: flex;
         justify-content: space-between; 
-        align-items: flex-start;
+        align-items: center;
         background-size: cover;
-        height: 90vh;
         width: 100%;
+        padding: .3rem;
     }
 
     nav ul{
@@ -80,5 +103,13 @@ nav li a{
 
     li.confirm-seat{
         width: 70%;
+    }
+
+    header div.heading{
+        padding: 15rem 0 0 2rem;
+    }
+
+    header h1{
+        font-size: 4rem;
     }
 }
